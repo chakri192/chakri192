@@ -11,16 +11,6 @@
 
 ---
 
-### stack
-
-```
-languages   C  ·  Python  ·  Bash / Zsh
-systems     IOKit  ·  Mach APIs  ·  launchd  ·  PlatformIO (ESP8266)
-tooling     Neovim  ·  Homebrew  ·  Ollama  ·  rg · fd · eza · bat
-platform    macOS Apple Silicon  ·  Azure  ·  Termux
-```
-
----
 
 <div align="center">
 
