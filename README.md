@@ -9,13 +9,3 @@
 
 </div>
 
----
-
-
-<div align="center">
-
-<br/>
-
-<sub>Bengaluru, IN</sub>
-
-</div>
