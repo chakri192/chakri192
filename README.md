@@ -11,24 +11,6 @@
 
 ---
 
-### about
-
-First-year CSE student into systems programming, macOS internals, and building things that run quietly in the background.
-
-Running a self-hosted modded Fabric server on Azure, obsessing over dotfiles, and writing daemons nobody asked for.
-
----
-
-### projects
-
-| project | what it does | stack |
-|---|---|---|
-| [linkedin-bot](https://github.com/chakri192/linkedin-bot) | auto-posts tech news via local Ollama + LinkedIn API, fires via launchd | Python |
-| [college-mode](https://github.com/chakri192/college-mode) | Termux daemon — silences phone on campus geofence entry | Bash |
-| [dotfile](https://github.com/chakri192/dotfile) | zsh, neovim, Finder Quick Actions, hidutil remaps, launchd agents | Shell |
-
----
-
 ### stack
 
 ```
@@ -37,14 +19,6 @@ systems     IOKit  ·  Mach APIs  ·  launchd  ·  PlatformIO (ESP8266)
 tooling     Neovim  ·  Homebrew  ·  Ollama  ·  rg · fd · eza · bat
 platform    macOS Apple Silicon  ·  Azure  ·  Termux
 ```
-
----
-
-### currently
-
-- learning unix internals — daemons, IPC, system calls
-- building macOS automation tooling
-- seeking software engineering internships
 
 ---
 
