@@ -4,7 +4,6 @@
 
 <br/>
 
-[![GitHub](https://img.shields.io/badge/-chakri192-181717?style=flat-square&logo=github)](https://github.com/chakri192)
 [![LinkedIn](https://img.shields.io/badge/-chakradhar--v-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/1chakradhar-v1)
 
 </div>
