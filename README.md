@@ -4,7 +4,7 @@
 <br/>
 
 
-[![LinkedIn](https://img.shields.io/badge/-chakradhar--v-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/1chakradhar-v1)
+[![LinkedIn](https://badgen.net/badge/icon/chakradhar-v?icon=linkedin&label&color=blue&labelColor=blue)](https://linkedin.com/in/1chakradhar-v1)
 
 [![Website](https://img.shields.io/badge/chakradharv.dev-000000?style=flat-square)](https://chakradharv.dev)
 
