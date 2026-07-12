@@ -6,8 +6,8 @@
 
 <br/>
 
-[![LinkedIn](https://img.shields.io/badge/-chakradhar--v-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/1chakradhar-v1)      
-[![GitHub](https://img.shields.io/badge/-chakradharv-181717?style=flat-square&logo=website)](https://chakradharv.dev)
+[![LinkedIn](https://img.shields.io/badge/-chakradhar--v-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/1chakradhar-v1)
+[![Website](https://img.shields.io/badge/-chakradharv.dev-000000?style=flat-square&logo=googlechrome&logoColor=white)](https://chakradharv.dev)
 
 
 </div>
