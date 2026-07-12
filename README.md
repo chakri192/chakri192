@@ -4,7 +4,10 @@
 <br/>
 
 
-[![LinkedIn](https://cdn.simpleicons.org/linkedin/0A66C2)](https://linkedin.com/in/1chakradhar-v1)
+<a href="https://linkedin.com/in/1chakradhar-v1">
+  <img src="https://cdn.simpleicons.org/linkedin/0A66C2" width="20" height="20" alt="LinkedIn"/>
+  chakradhar-v
+</a>
 
 [![Website](https://img.shields.io/badge/chakradharv.dev-000000?style=flat-square)](https://chakradharv.dev)
 
