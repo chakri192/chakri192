@@ -1,61 +1,62 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=58A6FF&center=true&vCenter=true&width=460&lines=hey%2C+i'm+chakri;systems+%26+security;from+scratch%2C+mostly" alt="hey, I'm chakri — systems and security" />
+<img src="docs/strata.svg" width="860" alt="" />
 
-**First-year CSE undergrad in Bengaluru.** I like the layer below the library.
+# V Chakradhar
+
+**Systems and security.** Computer Science undergraduate, Bengaluru.
 
 <p>
   <a href="https://chakradharv.dev"><img alt="Website" src="https://img.shields.io/badge/chakradharv.dev-1c1c1e?style=flat-square&logo=safari&logoColor=white" /></a>
   <a href="https://linkedin.com/in/1chakradhar-v1"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-1c1c1e?style=flat-square&logo=linkedin&logoColor=0A66C2" /></a>
-  <a href="mailto:chakradharv08@gmail.com"><img alt="Email" src="https://img.shields.io/badge/email-1c1c1e?style=flat-square&logo=gmail&logoColor=EA4335" /></a>
+  <a href="mailto:chakradharv08@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-1c1c1e?style=flat-square&logo=gmail&logoColor=EA4335" /></a>
 </p>
-
-<p>
-  <img alt="C" src="https://img.shields.io/badge/C-1c1c1e?style=flat-square&logo=c&logoColor=A8B9CC" />
-  <img alt="Rust" src="https://img.shields.io/badge/Rust-1c1c1e?style=flat-square&logo=rust&logoColor=DEA584" />
-  <img alt="Python" src="https://img.shields.io/badge/Python-1c1c1e?style=flat-square&logo=python&logoColor=3776AB" />
-  <img alt="Swift" src="https://img.shields.io/badge/Swift-1c1c1e?style=flat-square&logo=swift&logoColor=F05138" />
-  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-1c1c1e?style=flat-square&logo=javascript&logoColor=F7DF1E" />
-
-</p>
-
-<br />
-
-<img src="docs/strata.svg" width="860" alt="" />
 
 </div>
 
-<br />
-
 ---
 
-### What I'm actually interested in
+## About
 
-Writing the thing instead of importing it. Not out of principle — because the layer underneath is where the interesting decisions are, and you don't find them until the abstraction is gone.
+I build things at the layer below the library — network protocols, data stores, native applications, and embedded firmware — implemented from the specification rather than assembled from packages.
 
-Some of what that turned into:
+This is a deliberate way to learn. A BitTorrent client that speaks the real wire protocol teaches you what a swarm actually is; a Redis-compatible server that `redis-cli` connects to unmodified teaches you what a wire protocol actually costs. The abstraction has to be gone before the interesting decisions become visible.
 
-**[bittorrent-rs](https://github.com/chakri192/bittorrent-rs)** — a complete BitTorrent client in Rust. Bencode parser, the BEP 3 peer protocol, trackers over HTTP/HTTPS/UDP, the mainline DHT, PEX, web seeds, rarest-first with an endgame, and seeding. It pulls real public torrents to completion — a 21 GB file, verified byte for byte — then serves them back. ~10k lines, 256 tests, no crate doing the actual work.
+Everything below is written, tested, and running. Where I list a test count, it is the number the suite reports.
 
-**[emberkv](https://github.com/chakri192/emberkv)** — a Redis-compatible data store in pure Python, standard library only. Real RESP2 over a real socket, 59 commands, TTLs, transactions, pub/sub, and an append-only log that survives a crash mid-write. `redis-cli` and `redis-py` can't tell the difference.
+## Selected work
 
-**[vitrium](https://github.com/chakri192/vitrium)** — a genuinely transparent text editor for macOS. `NSVisualEffectView` in `.behindWindow` mode, so the compositor samples what is actually behind the window; drag it across your wallpaper and the glass changes with it. Native AppKit, zero dependencies, and no Electron anywhere near it.
+| Project | Description | Stack | Scale |
+|---|---|---|---|
+| **[bittorrent-rs](https://github.com/chakri192/bittorrent-rs)** | A complete BitTorrent client built from the specifications — bencode, the BEP 3 peer protocol, trackers over HTTP/HTTPS/UDP, the mainline DHT, PEX, web seeds, rarest-first selection with an endgame, and seeding. Downloads real public torrents to completion and verifies them byte for byte. | Rust | ~10,000 lines · 259 tests |
+| **[forge](https://github.com/chakri192/forge)** | A platform for private learning cohorts: task lifecycles, review queues with weighted rubrics, an XP ledger, a voting forum, and cohort analytics with at-risk detection. Built without a frontend framework. | Node · Express · SQLite | ~21,000 lines · 351 tests |
+| **[emberkv](https://github.com/chakri192/emberkv)** | A Redis-compatible in-memory data store using only the standard library. RESP2 over real sockets, 59 commands, millisecond TTLs, transactions, pub/sub, and an append-only log that survives a crash mid-write. | Python | ~1,600 lines · 29 tests |
+| **[vitrium](https://github.com/chakri192/vitrium)** | A transparent text editor for macOS using compositor-level blur, so the desktop is genuinely visible through the window. Incremental syntax highlighting, atomic saves, per-tab undo. No Electron, no web view. | Swift · AppKit | ~4,200 lines · 53 tests |
+| **[ripple](https://github.com/chakri192/ripple)** | A data-incident triage agent for DataHub. Walks downstream lineage across every platform, ranks impact by criticality, resolves owners, and writes the incident back to the catalog as a tag, a runbook, and an Incident entity. | Python · DataHub | ~1,300 lines |
+| **[hydra](https://github.com/chakri192/hydra)** | Real-time water level and methane monitoring for sewage chambers, serving its own dashboard from microcontroller flash. The alert threshold lowers automatically when rain is forecast. | ESP8266 · C++ | Firmware + embedded UI |
 
-**[forge](https://github.com/chakri192/forge)** — an operating system for a private learning cohort. Tasks and review queues, XP and badges, a voting forum, duels with escrowed stakes, teacher analytics. Express over SQLite with a vanilla ES-module client — no frontend framework at all. 351 tests.
+### Smaller tools, in daily use
 
-**[hydra](https://github.com/chakri192/hydra)** — an ESP8266 watching water level and methane in a sewage chamber, serving its own multi-node dashboard out of `PROGMEM`. The alert threshold drops on its own when rain is in the forecast.
+[**clipsyncd**](https://github.com/chakri192/clipsyncd) — bidirectional Mac ↔ Android clipboard sync over LAN, with no cloud service in the path.
+[**minimal-notifications**](https://github.com/chakri192/minimal-notifications) — clipboard feedback that never needs dismissing, using the native macOS HUD.
+[**college-mode**](https://github.com/chakri192/college-mode) — a geofence with hysteresis that manages phone volume by location.
+[**m4-sentinel**](https://github.com/chakri192/m4-sentinel) — an Apple Silicon monitor reading thermal and memory pressure through native Mach and notify APIs.
+[**dotfile**](https://github.com/chakri192/dotfile) — shell tooling, a modular Neovim configuration, and macOS automation.
 
-And the small ones that get used daily: [minimal-notifications](https://github.com/chakri192/minimal-notifications) for clipboard feedback that never needs dismissing, [clipsyncd](https://github.com/chakri192/clipsyncd) for Mac↔Android clipboard sync with no cloud in the path, [dotfile](https://github.com/chakri192/dotfile) for the machine itself, and [college-mode](https://github.com/chakri192/college-mode), which turns my phone down when I walk into college.
+## Technical focus
 
----
+**Languages** — C, Rust, Python, Swift, JavaScript
 
-### Currently
+**Areas** — network protocols and binary formats · concurrency and transactional correctness · macOS and Apple Silicon internals · embedded systems · applied security
 
-Learning systems programming properly — memory, the kernel boundary, and how things actually fail. Reading more C and Rust than anything else.
+**Practice** — implementing against specifications, testing the failure paths rather than the happy ones, and documenting the limits of what I have built as precisely as its capabilities.
 
-**Open to internships.** [chakradharv08@gmail.com](mailto:chakradharv08@gmail.com)
+## Currently
+
+Studying systems programming in depth — memory, the kernel boundary, and the ways real systems fail. Working primarily in C and Rust.
+
+**Available for internships.** [chakradharv08@gmail.com](mailto:chakradharv08@gmail.com)
 
 <div align="center">
-<br />
-<sub>Everything above is at <a href="https://chakradharv.dev">chakradharv.dev</a> — or as a shell you can type into.</sub>
+<sub>Full portfolio at <a href="https://chakradharv.dev">chakradharv.dev</a></sub>
 </div>
