@@ -21,7 +21,7 @@
 
 <br />
 
-<img src="docs/work.svg" width="860" alt="Nine projects grouped into systems, macOS, and platforms — each with what it is and how big it is" />
+<img src="docs/strata.svg" width="860" alt="" />
 
 </div>
 
